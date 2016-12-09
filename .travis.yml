@@ -3,7 +3,7 @@ language: cpp
 before_script:
     - mkdir build
     - cd build
-    - cmake -DCMAKE_BUILD_TYPE="${BUILD_TYPE}" -DCMAKE_C_COMPILER="${X_CC}" -DCMAKE_CXX_COMPILER="${X_CXX}" ..
+    - cmake -Dlibgo-common_build_tests=ON -DCMAKE_BUILD_TYPE="${BUILD_TYPE}" -DCMAKE_C_COMPILER="${X_CC}" -DCMAKE_CXX_COMPILER="${X_CXX}" ..
 
 script:
     - make VERBOSE=1 -j4
