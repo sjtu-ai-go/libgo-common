@@ -9,17 +9,16 @@ set(CMAKE_CXX_STANDARD 11)
 # Spdlog
 ##################################
 set(spdlog_SOURCE_DIR ${libgo-common_SOURCE_DIR}/vendor/spdlog)
-add_subdirectory (${spdlog_SOURCE_DIR})
 include_directories(${spdlog_SOURCE_DIR}/include)
 
 ##################################
 # libgo-common
 ##################################
 include_directories(${libgo-common_SOURCE_DIR}/src)
-
 set(logger_SRC src/logger.cpp)
-
 add_library(go-common STATIC ${logger_SRC})
+
+set(libgo-common_INCLUDE_DIR ${libgo-common_SOURCE_DIR}/src ${spdlog_SOURCE_DIR}/include PARENT_SCOPE)
 
 
 #################################
