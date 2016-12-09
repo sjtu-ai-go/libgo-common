@@ -1,4 +1,6 @@
 # libgo-common
+[![Build Status](https://travis-ci.org/sjtu-ai-go/libgo-common.svg)](https://travis-ci.org/sjtu-ai-go/libgo-common)
+[![GNU3 License](https://img.shields.io/github/license/sjtu-ai-go/libgo-common.svg)](https://github.com/sjtu-ai-go/libgo-common/blob/master/LICENSE)
 
 ## Usage
 ```
