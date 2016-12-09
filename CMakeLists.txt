@@ -8,7 +8,7 @@ set(CMAKE_CXX_STANDARD 11)
 ##################################
 # Spdlog
 ##################################
-set(spdlog_SOURCE_DIR vendor/spdlog)
+set(spdlog_SOURCE_DIR ${libgo-common_SOURCE_DIR}/vendor/spdlog)
 add_subdirectory (${spdlog_SOURCE_DIR})
 include_directories(${spdlog_SOURCE_DIR}/include)
 
@@ -30,7 +30,7 @@ if (libgo-common_build_tests)
     ################################
     # GTest
     ################################
-    ADD_SUBDIRECTORY (vendor/googletest/googletest)
+    ADD_SUBDIRECTORY (${libgo-common_SOURCE_DIR}/vendor/googletest/googletest)
     include_directories(${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR})
     ###############################
     # Logger-test
