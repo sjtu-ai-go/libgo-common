@@ -1,6 +1,6 @@
 [submodule "vendor/spdlog"]
 	path = vendor/spdlog
-	url = https://github.com/gabime/spdlog.git
+	url = https://github.com/sjtu-ai-go/spdlog.git
 [submodule "vendor/googletest"]
 	path = vendor/googletest
 	url = https://github.com/sjtu-ai-go/googletest.git
